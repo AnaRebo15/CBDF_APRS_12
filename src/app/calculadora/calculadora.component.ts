@@ -14,17 +14,17 @@ export class CalculadoraComponent {
   numero2 : number = 7;
 
   sumarNumeros(){
-    alert("Suma de números")
+    //alert("Suma de números")
     this.resultado = this.numero1+this.numero2;
   }
 
   restarNumeros(){
-    alert("Resta de números")
+    //alert("Resta de números")
     this.resultado = this.numero1-this.numero2
   }
 
   multiplicarNumeros(){
-    alert("Multiplicación de números")
+    //alert("Multiplicación de números")
     this.resultado = this.numero1*this.numero2
   }
 
@@ -32,9 +32,14 @@ export class CalculadoraComponent {
     if(this.numero2 == 0)
       alert("No se puede realizar la división")
     else{
-      alert("División de números")
+      //alert("División de números")
       this.resultado = this.numero1/this.numero2
     }
-      
+  }
+
+  iniciarCampos(){
+    this.resultado = 0;
+    this.numero1 = 0;
+    this.numero2 = 0;
   }
 }
